@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 10px;
+    background-color: rgb(184, 184, 184);
+}
+
+.conteiner .box {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.active {
+    animation: colors 3s alternate infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.htmlTwo {
+    width: 20%;
+    height: 50px;
+}
+
+.htmlTwo a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-weight: 900;
+    color: black;
+    font-size: 30px;
+}
+
+
+
+/* Homework 2 */
+
+
+
+.conteiner2 {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+.conteiner2 .top {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 0px 30px 15px black;
+}
+.conteiner2 .top .boxClone {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+}
+.conteiner2 .bottom {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteiner2 .bottom .item {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.conteiner2 .bottom .item input {
+    width: 50%;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.conteiner2 .bottom .item button {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(82, 82, 212);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
